@@ -1,0 +1,13 @@
+# ninja log v5
+3	176	6660692776319116	CMakeFiles/EDI_2022_II_Parcial1.dir/ejercicio_1.c.obj	96d21b363f70d703
+124	342	6660723635245273	EDI_2022_II_Parcial1.exe	80fe33e42af48090
+4	230	6660743397208089	build.ninja	6f8448ce9d6fd10d
+6	140	6660707076708168	CMakeFiles/EDI_2022_II_Parcial1.dir/Ej1_descuentos.c.obj	5b17f73b49491dd9
+3	123	6660723633120955	CMakeFiles/EDI_2022_II_Parcial1.dir/Ej2_segundos.c.obj	4561d0faed8a588f
+3	300	6660743397208089	build.ninja	6f8448ce9d6fd10d
+1	205	6660743692432324	CMakeFiles/EDI_2022_II_Parcial1.dir/Ej3_dias_hr_min.c.obj	77e2b3b1ed0f5dd2
+206	401	6660743694361604	EDI_2022_II_Parcial1.exe	eeeec6a5affbb49
+6	179	6660745842479726	CMakeFiles/EDI_2022_II_Parcial1.dir/Ej3_dias_hr_min.c.obj	77e2b3b1ed0f5dd2
+181	420	6660745844783581	EDI_2022_II_Parcial1.exe	eeeec6a5affbb49
+4	116	6660746300079065	CMakeFiles/EDI_2022_II_Parcial1.dir/Ej3_dias_hr_min.c.obj	77e2b3b1ed0f5dd2
+117	327	6660746302113736	EDI_2022_II_Parcial1.exe	eeeec6a5affbb49
