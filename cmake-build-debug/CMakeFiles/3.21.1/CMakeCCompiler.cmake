@@ -21,9 +21,9 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 set(CMAKE_AR "C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/ar.exe")
-set(CMAKE_C_COMPILER_AR "CMAKE_C_COMPILER_AR-NOTFOUND")
+set(CMAKE_C_COMPILER_AR "C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/gcc-ar.exe")
 set(CMAKE_RANLIB "C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/ranlib.exe")
-set(CMAKE_C_COMPILER_RANLIB "CMAKE_C_COMPILER_RANLIB-NOTFOUND")
+set(CMAKE_C_COMPILER_RANLIB "C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/gcc-ranlib.exe")
 set(CMAKE_LINKER "C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/ld.exe")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCC 1)

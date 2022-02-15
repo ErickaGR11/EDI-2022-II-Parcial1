@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/sams/EDI_2022/EDI-2022-II-Parcial1/cmake-build-debug"
+			"value" : "c:/Users/EDI_2022/EDI-2022-II-Parcial1/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "CMAKE_C_COMPILER_AR-NOTFOUND"
+			"value" : "C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "CMAKE_C_COMPILER_RANLIB-NOTFOUND"
+			"value" : "C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/sams/EDI_2022/EDI-2022-II-Parcial1"
+			"value" : "C:/Users/EDI_2022/EDI-2022-II-Parcial1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1095,7 +1095,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/sams/EDI_2022/EDI-2022-II-Parcial1/cmake-build-debug"
+			"value" : "C:/Users/EDI_2022/EDI-2022-II-Parcial1/cmake-build-debug"
 		},
 		{
 			"name" : "EDI_2022_II_Parcial1_IS_TOP_LEVEL",
@@ -1119,7 +1119,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/sams/EDI_2022/EDI-2022-II-Parcial1"
+			"value" : "C:/Users/EDI_2022/EDI-2022-II-Parcial1"
 		}
 	],
 	"kind" : "cache",
