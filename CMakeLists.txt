@@ -4,4 +4,4 @@ project(EDI_2022_II_Parcial1 C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(EDI_2022_II_Parcial1
-        Tarea5_ej3.c)
+        Tarea6_ej3.c)
