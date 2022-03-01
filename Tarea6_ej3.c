@@ -1,30 +1,32 @@
 #include <stdio.h>
-#define N 20
-void imprimirInstruccion(int valores);
+#define N 15
+void imprimirInstruccion(int *valores, int *mayor1, int *menor1);
 int main() {
-    int valores=0;
+    int valores, mayor1, menor1;
 
-    imprimirInstruccion(valores);
+    imprimirInstruccion(&valores, &mayor1, &menor1);
+    printf("Valor mayor es: %d\n ", mayor1);
+    printf("Valor menor es: %d\n", menor1);
 }
     //
-    void imprimirInstruccion(int valores)
+    void imprimirInstruccion( int *valores, int *mayor1, int *menor1)
     {
-        //int valores;
+
         int iterador;
-        int mayor = 0;
-        int menor = 1000;
+       int mayor = 0;
+       int menor = 1000;
 
         for (iterador=1; iterador<=N; iterador++)
         {
             printf("\nDame el valor %d \n", iterador);
-            scanf("%d", &valores);
+            scanf("%d", valores);
 
-            if (valores>mayor)
-                mayor= valores;
-            if (valores<menor)
-                menor= valores;
-
+            if (*valores>mayor)
+                mayor= *valores;
+                *mayor1=mayor;
+            if (*valores<menor)
+                menor= *valores;
+                *menor1=menor;
         }
-        printf("Valor mayor es: %d\n ", mayor);
-        printf("Valor menor es: %d\n", menor);
+
     }
