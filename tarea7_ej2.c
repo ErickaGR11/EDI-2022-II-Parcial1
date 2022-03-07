@@ -1,60 +1,70 @@
-#define MAX 3
 #include <stdio.h>
-void arreglo_almacen(int arr[MAX]);
-void imprime_arreglo(int *arreglo);
-void FuncionSumaPares(int arr[MAX], int *sumapar);
-void Sumar(int arr[MAX], int *result);
+#define MAX 20
+#define N_MAX 5
+void Sumatotal(int valores [N_MAX]);
+void Sumapar(int valores[N_MAX]);
+void SumaPosicion (int valores[N_MAX]);
 int main() {
-    //int valor;
-    int arreglo;
-    int resultadosumapar; int resultado;
-    arreglo_almacen(&arreglo);
-    imprime_arreglo(&arreglo);
-    FuncionSumaPares(arreglo, &resultadosumapar);
-    printf("suma par %d", resultadosumapar);
-    Sumar( arreglo,&resultado);
-    printf("suma %d", resultado);
+    int valores[N_MAX];
+    // int arreglo;
+    // int suma;
+    //PEDIMOS VALORES por medio del ciclo for
+    for (int i = 0; i < N_MAX; i++) {
+        printf("Ingrese valores %d :\n", i);
+        scanf("%d", &valores[i]);
+        //CICLO ANIDADO CONDICION DE LOS VALORES
+        while (valores[i] < 0 || valores[i] > MAX) {
+            printf("Ingrese un valor entre el 1 y el MAX: ");
+            scanf("%d", &valores[i]);
+        }
+    }
+
+    //IMPRIMIMOS VALORES por medio del ciclo for
+    printf("[");
+    for (int i = 0; i < N_MAX; i++) {
+        printf("%d,", valores[i]);
+    }
+    printf("]");
+
+    SumaPosicion ( valores);
+//______________________________________
+    Sumapar( valores);
+    //__________________________________
+    Sumatotal( valores);
+    //__________________________________________
+
+}
+void Sumatotal(int valores[N_MAX]) {
+    int acumulado = 0;
+
+
+    for (int i = 0; i < N_MAX ; i++) {
+        while (acumulado<MAX)
+            acumulado= valores[i] + acumulado;
+        if (acumulado>MAX)
+            acumulado=acumulado- valores[i];
+        }
+       printf("\nsuma total <= MAX : %d ", acumulado);
+
+    }
+//}
+void Sumapar(int valores[N_MAX]) {
+    int suma_par = 0;
+    for (int i = 0; i < N_MAX; i++) {
+        if (valores[i] % 2 == 0) {
+            suma_par = valores[i] + suma_par;
+        }
+    }
+    printf("\nsuma par: %d", suma_par);
 }
 
-    //ARREGLO
-    void arreglo_almacen(int arr[MAX])
-    {
-        for (int i=0; i< MAX; i++)
-        {
-            printf("ingrese un valor de la posicion %d\n", i);
-            scanf("%d", &arr[i]);
-            //if (valor>0 && valor<=100){
-           }
-    }
-
-    void imprime_arreglo(int *arreglo) {
-        for (int i = 0; i < MAX; i++)
-        {
-            printf("%d", arreglo[i]);
+void SumaPosicion (int valores[N_MAX])
+{
+    int suma_posicion = 0;
+    for (int i = 0; i < N_MAX; i++) {
+        if (i % 2 == 0) {
+            suma_posicion = valores[i] + suma_posicion;
         }
     }
-
-    void FuncionSumaPares(int arr[MAX], int *sumapar)
-    {
-    int suma=0;
-    for (int i=0; i<MAX; i++)
-    {
-        if (arr[i]%2==0)
-        {
-            *sumapar = suma+ arr[i];
-        }
-    }
-
-    }
-
-    void Sumar(int arr[MAX], int *result)
-    {
-    *result=0;
-    for (int i=0; i<MAX; i++)
-    {
-        if (arr[i]>1 && arr[i] <=100)
-        {
-            *result= result+ arr[i];
-        }
-    }
+    printf("\nsuma posicion par: %d", suma_posicion);
 }
